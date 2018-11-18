@@ -12,19 +12,17 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    #binding.pry
-
     "#{params[:phrase]} " * params[:number].to_i
-
-
-
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-
+    binding.pry
+    params[:word1] + params[:word2]
   end
 
   get '/:operation/:number1/:number2' do
+
+
 
   end
 
