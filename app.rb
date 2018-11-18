@@ -5,6 +5,7 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     @reverse_name = params[:name]
     "#{reverse_name.reverse}"
+    status = 200
   end
 
   get '/square/:number' do
