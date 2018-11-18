@@ -1,8 +1,10 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   get '/reversename/:name' do
     @reverse_name = params[:name]
+    binding.pry
     "#{reverse_name.reverse}"
   end
 
