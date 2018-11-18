@@ -13,10 +13,10 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     binding.pry
-  
+
     params[:phrase] * params[:number].to_i
 
-    end
+    
 
   end
 
