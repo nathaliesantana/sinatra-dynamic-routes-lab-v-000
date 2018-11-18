@@ -24,10 +24,10 @@ class App < Sinatra::Base
     number1 = params[:number1]
     number2 = params[:number2]
     @operation = params[:operation]
-binding.pry 
+binding.pry
     if @operation = "add"
       (number1 + number2).to_s
-    elsif @operation = "substract"
+    elsif @operation = "subtract"
       (number1 - number2).to_s
     elsif @operation = "multiply"
       (number1 * number2).to_s
